@@ -1,0 +1,23 @@
+contacts:
+  - number: 358436202
+    name: Alberto Cabrera
+  - number: 964566202
+    name: Helena Vasquez
+  - number: 668955556
+    name: Mirian Pedroza
+    alternatives:
+      - number: 78921263
+        name: Cristobal Valencia
+      - number: 52698502
+        name: Marlene Yepez
+  - number: 89966202
+    name: Indira Rodriguez
+  - number: 358436202
+    name: Alberto cabvrera
+    alternatives:
+      number: 73369945
+      name: Hugo Useche
+  - number: 55369871
+    name: Marco Andrade
+  - number: 145995652
+    name: Luis Fonseca

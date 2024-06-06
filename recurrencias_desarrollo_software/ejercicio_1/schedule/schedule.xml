@@ -1,0 +1,314 @@
+<week>
+    <number>20</number>
+    <goals>
+        <goal>Delivery Invoice Functionality</goal>
+    </goals>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>08:00</initHour>
+        <endHour>08:30</endHour>
+        <place>Gym</place>
+        <action>Abdominal Exercises</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>08:30</initHour>
+        <endHour>09:00</endHour>
+        <place>Office</place>
+        <action>Emails Checking</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>09:00</initHour>
+        <endHour>09:30</endHour>
+        <place>Meeting Room</place>
+        <action>Daily meeting with colleagues</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>09:30</initHour>
+        <endHour>10:00</endHour>
+        <place>Office</place>
+        <action>Execution of sprint tasks TR-01</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>10:00</initHour>
+        <endHour>11:00</endHour>
+        <place>Meeting Room</place>
+        <action>Grooming Meeting Sprint No. 10</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>11:00</initHour>
+        <endHour>12:00</endHour>
+        <place>Office</place>
+        <action>Review of workers (virtual machines)</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>12:00</initHour>
+        <endHour>14:00</endHour>
+        <place>Restaurant</place>
+        <action>Lunch</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>14:00</initHour>
+        <endHour>16:00</endHour>
+        <place>Meeting Room</place>
+        <action>Meeting with Human Resources</action>
+    </action>
+    <action>
+        <date>03-06-2024</date>
+        <initHour>16:00</initHour>
+        <endHour>18:00</endHour>
+        <place>Home</place>
+        <action>Master Software Development Course</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>08:00</initHour>
+        <endHour>08:30</endHour>
+        <place>Home</place>
+        <action>UM Book Reading</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>08:30</initHour>
+        <endHour>09:00</endHour>
+        <place>Office</place>
+        <action>Emails Checking</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>09:00</initHour>
+        <endHour>09:30</endHour>
+        <place>Meeting Room</place>
+        <action>Daily meeting with colleagues</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>09:30</initHour>
+        <endHour>11:00</endHour>
+        <place>Office</place>
+        <action>Execution of sprint tasks TR-02</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>11:00</initHour>
+        <endHour>12:00</endHour>
+        <place>Office</place>
+        <action>Verification Meeting</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>12:00</initHour>
+        <endHour>14:00</endHour>
+        <place>Restaurant</place>
+        <action>Lunch</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>14:00</initHour>
+        <endHour>16:00</endHour>
+        <place>Meeting Room</place>
+        <action>Meeting with Technical Leader</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>16:00</initHour>
+        <endHour>17:00</endHour>
+        <place>Home</place>
+        <action>Master Software Development Course</action>
+    </action>
+    <action>
+        <date>04-06-2024</date>
+        <initHour>17:00</initHour>
+        <endHour>18:00</endHour>
+        <place>Home</place>
+        <action>English Course</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>08:00</initHour>
+        <endHour>08:30</endHour>
+        <place>Home</place>
+        <action>Guitar Practice</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>08:30</initHour>
+        <endHour>09:00</endHour>
+        <place>Office</place>
+        <action>Emails Checking</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>09:00</initHour>
+        <endHour>09:30</endHour>
+        <place>Meeting Room</place>
+        <action>Daily meeting with colleagues</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>09:30</initHour>
+        <endHour>11:00</endHour>
+        <place>Office</place>
+        <action>Execution of sprint tasks TR-03</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>11:00</initHour>
+        <endHour>12:00</endHour>
+        <place>Office</place>
+        <action>Performing Testing</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>12:00</initHour>
+        <endHour>14:00</endHour>
+        <place>Restaurant</place>
+        <action>Lunch</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>14:00</initHour>
+        <endHour>15:00</endHour>
+        <place>Virtual (Zoom)</place>
+        <action>Meeting with Scrum Master</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>15:00</initHour>
+        <endHour>17:00</endHour>
+        <place>Meeting Room</place>
+        <action>HandOver Invoice Billing Process</action>
+    </action>
+    <action>
+        <date>05-06-2024</date>
+        <initHour>17:00</initHour>
+        <endHour>18:00</endHour>
+        <place>Home</place>
+        <action>Master Software Development Course</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>08:00</initHour>
+        <endHour>08:30</endHour>
+        <place>Gym</place>
+        <action>Biseps Exercises</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>08:30</initHour>
+        <endHour>09:00</endHour>
+        <place>Office</place>
+        <action>Emails Checking</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>09:00</initHour>
+        <endHour>09:30</endHour>
+        <place>Meeting Room</place>
+        <action>Daily meeting with colleagues</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>09:30</initHour>
+        <endHour>12:00</endHour>
+        <place>Office</place>
+        <action>Execution of sprint tasks TR-04</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>12:00</initHour>
+        <endHour>14:00</endHour>
+        <place>Restaurant</place>
+        <action>Lunch</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>14:00</initHour>
+        <endHour>16:00</endHour>
+        <place>Meeting Room</place>
+        <action>Meeting with Infrastruct Team</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>16:00</initHour>
+        <endHour>17:00</endHour>
+        <place>Office</place>
+        <action>Review of work plan with the boss</action>
+    </action>
+    <action>
+        <date>06-06-2024</date>
+        <initHour>17:00</initHour>
+        <endHour>18:00</endHour>
+        <place>Home</place>
+        <action>Master Software Development Course</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>08:00</initHour>
+        <endHour>08:30</endHour>
+        <place>Gym</place>
+        <action>Chest Exercises</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>08:30</initHour>
+        <endHour>09:00</endHour>
+        <place>Office</place>
+        <action>Emails Checking</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>09:00</initHour>
+        <endHour>09:30</endHour>
+        <place>Meeting Room</place>
+        <action>Daily meeting with colleagues</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>09:30</initHour>
+        <endHour>12:00</endHour>
+        <place>Office</place>
+        <action>Execution of sprint tasks TR-05</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>12:00</initHour>
+        <endHour>14:00</endHour>
+        <place>Restaurant</place>
+        <action>Lunch</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>14:00</initHour>
+        <endHour>15:00</endHour>
+        <place>Office</place>
+        <action>Delivery of task development</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>15:00</initHour>
+        <endHour>16:00</endHour>
+        <place>Meeting Room</place>
+        <action>Presentation of the development before the evaluation committee</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>16:00</initHour>
+        <endHour>17:00</endHour>
+        <place>Office</place>
+        <action>Development Week Review</action>
+    </action>
+    <action>
+        <date>07-06-2024</date>
+        <initHour>17:00</initHour>
+        <endHour>18:00</endHour>
+        <place>Home</place>
+        <action>Master Software Development Course</action>
+    </action>
+</week>
