@@ -1,0 +1,46 @@
+<agenda>
+    <contact>
+        <number>358436202</number>
+        <name>Alberto Cabrera</name>
+    </contact>
+    <contact>
+        <number>964566202</number>
+        <name>Helena Vasquez</name>
+    </contact>
+    <contact>
+        <number>668955556</number>
+        <name>Mirian Pedroza</name>
+        <alternatives>
+            <alternative>
+                <number>78921263</number>
+                <name>Cristobal Valencia</name>
+            </alternative>
+            <alternative>
+                <number>52698502</number>
+                <name>Marlene Yepez</name>
+            </alternative>
+        </alternatives>
+    </contact>
+    <contact>
+        <number>89966202</number>
+        <name>Indira Rodriguez</name>
+    </contact>
+    <contact>
+        <number>358436202</number>
+        <name>Alberto cabvrera</name>
+        <alternatives>
+            <alternative>
+                <number>73369945</number>
+                <name>Hugo Useche</name>
+            </alternative>
+        </alternatives>
+    </contact>
+    <contact>
+        <number>55369871</number>
+        <name>Marco Andrade</name>
+    </contact>
+    <contact>
+        <number>145995652</number>
+        <name>Luis Fonseca</name>
+    </contact>
+</agenda>

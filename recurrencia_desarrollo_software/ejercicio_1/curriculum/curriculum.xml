@@ -1,0 +1,57 @@
+<resume>
+  <personalData>
+    <names>Juan Ignacio</names>
+    <lastNames>Perez Rodríguez</lastNames>
+    <birthDay>2 febrero 1970</birthDay>
+    <proffession>Ingeniero Civil</proffession>
+    <address>Calle 1 Carrera 2 No 45b</address>
+    <phone>312 2562587</phone>
+    <email>juan_perez@correo.com</email>
+  </personalData>
+  <study>
+    <degree>Universitary Specialization</degree>
+    <name>Calculating Engineer</name>
+    <year>1996</year>
+  </study>
+  <study>
+    <degree>Universitary</degree>
+    <name>Civil Engineer</name>
+    <year>1994</year>
+  </study>
+  <study>
+    <degree>High School</degree>
+    <name>Academic Bachelor</name>
+    <year>1988</year>
+  </study>
+  <job>
+    <position>Resident Engineer</position>
+    <company>Ingecom</company>
+    <timeWorked>2 years</timeWorked>
+    <contact>Pablo Millar</contact>
+    <phone>69854562</phone>
+  </job>
+  <job>
+    <position>Accounting Engineer</position>
+    <company>Contacon Ltda</company>
+    <timeWorked>1 year</timeWorked>
+    <contact>Maria Constanza</contact>
+    <phone>36458955</phone>
+  </job>
+  <job>
+    <position>Intervening Engineer</position>
+    <company>Calidaza</company>
+    <timeWorked>4 years</timeWorked>
+    <contact>Marco Avendaño</contact>
+    <phone>554889522</phone>
+  </job>
+  <reference>
+    <name>Augusto Cabrera</name>
+    <ocupation>Civil Engineer</ocupation>
+    <phone>6897343893</phone>
+  </reference>
+  <reference>
+    <name>Maribel Zuñiga</name>
+    <ocupation>Architect</ocupation>
+    <phone>9856246</phone>
+  </reference>
+</resume>

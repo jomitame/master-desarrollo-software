@@ -1,0 +1,41 @@
+@startuml
+class TicTacToe {}
+class Turn {}
+class Player {}
+class Board {}
+class Goal {}
+class Vertical {}
+class Horizontal {}
+class RightDiagonal {}
+class LeftDiagonal {}
+class Box {}
+class Action {}
+class PlaceAction {}
+class MoveAction {}
+class Shape {}
+class XShape {}
+class OShape {}
+
+TicTacToe *--> "2..*" Turn
+TicTacToe *--> "2" Player
+TicTacToe *--> Board
+Player o--> Goal
+Turn --> Player
+Goal <|-- Vertical
+Goal <|-- Horizontal
+Goal <|-- RightDiagonal
+Goal <|-- LeftDiagonal
+Player --> Board
+Board *--> "9" Box
+Action <|-- PlaceAction
+Action <|-- MoveAction
+Action ..> Box: target
+MoveAction ..> Box
+Goal ..> "3" Box
+Goal ..> "3" PlaceAction
+Goal ..> "*" MoveAction
+Shape <|-- XShape
+Shape <|-- OShape
+Player *--> "3" Shape
+Player --> "*" Action
+@enduml
