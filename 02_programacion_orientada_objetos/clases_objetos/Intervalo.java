@@ -7,8 +7,8 @@ public class Intervalo {
         return this.middlePoint - this.length/2;
     }
 
-    private double setMinimun(double minimun) {
-        this.length = this.getMaximun(); - minimun;
+    private void setMinimun(double minimun) {
+        this.length = this.getMaximun() - minimun;
         this.middlePoint = minimun + this.length/2;
     }
 
@@ -16,7 +16,7 @@ public class Intervalo {
         return this.middlePoint + this.length/2;
     }
 
-    private double setMaximun(double maximun) {
+    private void setMaximun(double maximun) {
         this.length = maximun - this.getMinimun();
         this.middlePoint = maximun - this.length/2;
     }
@@ -35,7 +35,7 @@ public class Intervalo {
     }
 
     public Intervalo(Intervalo interval) {
-        this.(interval.getMinimun(), interval.getMaximun());
+        this(interval.getMinimun(), interval.getMaximun());
     }
 
     public Intervalo() {
@@ -112,7 +112,8 @@ public class Intervalo {
     }
 
     public void show() {
-        new GestorIO.out("[" + this.getMinimun() + "," + getMaximun() + "]")
+        GestorIO gestorIO = new GestorIO();
+        gestorIO.out("[" + this.getMinimun() + "," + getMaximun() + "]");
     }
 
     public Intervalo[] cutUp(int pieces) {
