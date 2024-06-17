@@ -1,81 +1,148 @@
+import java.util.StringTokenizer;
+
 class Fecha {
-    public Fecha(){}
 
-    public Fecha(int day, int month, int year){}
+    private int day;
+    private int month;
+    private int year;
+    private static final int[] DAYS_OF_MONTHS = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    // DAYS_LETTERS starts with 's' because 1/1/1 was saturday (wikipedia)
+    private static final char[] DAYS_LETTERS  = new char[]{'s', 'd', 'l', 'm', 'm', 'j', 'v'};
 
-    public Fecha(Fecha fecha){}
-
-    public Fecha(int timeStamp) {}
-
-    public Fecha(String stringFecha) {}
-
-    public Fecha clone() {
-        return null;
+    public Fecha(){
+        this(1,1,1);
     }
 
-    public char weekDay() {
-        return ' ';
+    public Fecha(int day, int month, int year){
+        this.set(day, month, year);
+    }
+
+    public Fecha(Fecha fecha){
+        this(fecha.day, fecha.month, fecha.year);
+    }
+
+    public Fecha(String stringFecha) {
+        StringTokenizer stringTokenizer = new StringTokenizer(stringFecha, "/");
+        this.day = Integer.parseInt(stringTokenizer.nextToken());
+        this.month = Integer.parseInt(stringTokenizer.nextToken());
+        this.year = Integer.parseInt(stringTokenizer.nextToken());
+    }
+
+    public Fecha cloneMe() {
+        return new Fecha(this.day, this.month, this.year);
     }
 
     public boolean equal(Fecha fecha) {
-        return false;
+        return this.day == fecha.getDay() && this.month == fecha.getMonth() && this.year == fecha.getYear();
     }
 
-    public boolean holiday() {
-        return false;
+    public void show() {
+        new GestorIO().out(this.day + "/" + this.month + "/" + this.year);
     }
-
-    public int difference(Fecha fecha) {
-        return 0;
-    }
-
-    public void show() {}
 
     public String toStringCAS() {
-        return null;
+        return this.day + "/" + this.month + "/" + this.year;
     }
 
     public String toStringUSA() {
-        return null;
+        return this.month + "/" + this.day + "th" + this.year;
     }
 
-    public String toString(int format) {
-        return null;
+    private void set(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
-    public void set(Fecha fecha) {}
+    public void set(Fecha fecha) {
+        this.set(fecha.day, fecha.month, fecha.year);
+    }
 
     public int getDay() {
-        return 0;
+        return this.day;
     }
 
     public int getMonth() {
-        return 0;
+        return this.month;
     }
 
     public int getYear() {
-        return 0;
+        return this.year;
     }
 
-    public char station() {
-        return ' ';
+    public static boolean leap(int year) {
+        return  year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
+    }
+
+    public boolean isLeap() {
+        return Fecha.leap(this.year);
+    }
+
+    private int daysToOrigin() {
+        int result = this.getDay();
+
+        for(int i=0; i<(this.getMonth()); i++){
+            result += DAYS_OF_MONTHS[i];
+        }
+        result += 365 * (this.getYear() -1);
+
+        if (this.getMonth() > 2 && this.isLeap()) {
+            result ++;
+        }
+        for (int i=1; i < this.getYear() -1; i++) {
+             if (Fecha.leap(i)) {
+                 result ++;
+             }
+         }
+
+        return result;
+    }
+
+    public boolean isBefore(Fecha fecha) {
+        return this.daysToOrigin() < fecha.daysToOrigin();
+    }
+
+    public boolean isAfter(Fecha fecha) {
+        return this.daysToOrigin() > fecha.daysToOrigin();
+    }
+
+    public int difference(Fecha fecha) {
+        return this.daysToOrigin() - fecha.daysToOrigin();
+    }
+
+    public char weekDay() {
+        return DAYS_LETTERS[(this.daysToOrigin() % 7) - 1];
+    }
+
+    public boolean isWeekEnd() {
+        final char WEEK_DAY = this.weekDay();
+        return WEEK_DAY == 's' || WEEK_DAY == 'd';
     }
 
     public int weekNumber() {
-        return 0;
+        return (this.daysToOrigin() - new Fecha(1,1, this.getYear()).daysToOrigin()) / 7 + 1;
     }
 
-    public void increment(int days) {}
-
-    public boolean checkIsBisest() {
-        return false;
+    private void increment() {
+        this.day ++;
+        if (this.getDay() > DAYS_OF_MONTHS[this.getMonth() - 1]) {
+            this.day = 1;
+            this.month ++;
+            if (this.getMonth() > 12) {
+                this.month = 1;
+                this.year ++;
+            }
+        }
     }
 
-    public Fecha currentDate() {
-        return  null;
+    public void increment(int days) {
+        for (int i=0; i < days; i++){
+            this.increment();
+        }
     }
 
     public static void main(String[] args) {
-
+        boolean yesItIs = Fecha.leap(2100);
+        System.out.println(yesItIs);
     }
 }
