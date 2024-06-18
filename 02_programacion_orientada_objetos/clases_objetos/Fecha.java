@@ -74,21 +74,35 @@ class Fecha {
         return  year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
     }
 
+    public static int daysOfYear(int year){
+        int days = 365;
+        if (Fecha.leap(year)) {
+            days++;
+        }
+        return days;
+    }
+
+    public int dayOfYear() {
+        int result = this.getDay();
+        for (int i=0; i<(this.getMonth() - 1); i++) {
+            result += DAYS_OF_MONTHS[i];
+        }
+        if (this.getMonth() > 2 && this.isLeap()) {
+            result ++;
+        }
+
+        return result;
+    }
+
     public boolean isLeap() {
         return Fecha.leap(this.year);
     }
 
     private int daysToOrigin() {
-        int result = this.getDay();
+        int result = this.dayOfYear();
 
-        for(int i=0; i<(this.getMonth()); i++){
-            result += DAYS_OF_MONTHS[i];
-        }
         result += 365 * (this.getYear() -1);
 
-        if (this.getMonth() > 2 && this.isLeap()) {
-            result ++;
-        }
         for (int i=1; i < this.getYear() -1; i++) {
              if (Fecha.leap(i)) {
                  result ++;
